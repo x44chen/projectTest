@@ -1,0 +1,5 @@
+example_greeting:
+    resource: "@ExampleGreetingBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

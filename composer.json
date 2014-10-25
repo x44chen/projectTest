@@ -46,33 +46,26 @@
     "config": {
         "bin-dir": "bin"
     },
-    "extra": 
-	{
-        "heroku": 
-		{
-            "document-root": "web",
-			"newrelic": true,
-            "php-config": 
-			[
-                "date.timezone=Europe/Amsterdam",
-                "display_errors=off",
-                "short_open_tag=off"
-            ]
-
-        }
-		"symfony-app-dir": "app",
+    "extra": {
+        "symfony-app-dir": "app",
         "symfony-web-dir": "web",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         },
-        "branch-alias": 
-		{
+        "branch-alias": {
             "dev-master": "2.5-dev"
         }
 		
+		"heroku": {
+		"newrelic": true
+
+            "document-root": "web",
+            "php-config": [
+                "date.timezone=Europe/Amsterdam",
+                "display_errors=off",
+                "short_open_tag=off"
+            ]
+        }
+
     }
-	
-	
 }
-
-
